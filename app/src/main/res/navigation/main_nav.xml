@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/main_nav">
+<navigation
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main_nav"
+        app:startDestination="@id/start2">
 
+    <fragment
+            android:id="@+id/start2"
+            android:name="okami.yami.carl_finalproject_tourneybuilder.Start"
+            android:label="fragment_start"
+            tools:layout="@layout/fragment_start">
+
+        <action
+                android:id="@+id/action_start2_to_participants82"
+                app:destination="@id/participants8"/>
+    </fragment>
+    <fragment
+            android:id="@+id/participants8"
+            android:name="okami.yami.carl_finalproject_tourneybuilder.participants"
+              android:label="fragment_participants"
+            tools:layout="@layout/fragment_participants">
+        <action
+                android:id="@+id/action_participants_to_playerBio"
+                app:destination="@id/playerBio"/>
+    </fragment>
+    <fragment
+            android:id="@+id/playerBio"
+            android:name="okami.yami.carl_finalproject_tourneybuilder.playerBio"
+              android:label="fragment_player_bio"
+            tools:layout="@layout/fragment_player_bio"/>
 </navigation>
