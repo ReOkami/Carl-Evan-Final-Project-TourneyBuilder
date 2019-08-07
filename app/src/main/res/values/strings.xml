@@ -4,9 +4,9 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="welcome_message">Welcome to our tournament app</string>
-    <string name="player_name">player_name</string>
-    <string name="tournament_name">tournament_name</string>
-    <string name="past_wins">past_wins</string>
+    <string name="player_name">pname</string>
+    <string name="tournament_name">tname</string>
+    <string name="past_wins">wins</string>
     <string name="biography">biography</string>
 
 
