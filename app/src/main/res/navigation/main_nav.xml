@@ -4,18 +4,8 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/main_nav"
-        app:startDestination="@id/start2">
+        app:startDestination="@id/start3">
 
-    <fragment
-            android:id="@+id/start2"
-            android:name="okami.yami.carl_finalproject_tourneybuilder.Start"
-            android:label="fragment_start"
-            tools:layout="@layout/fragment_start">
-
-        <action
-                android:id="@+id/action_start2_to_participants82"
-                app:destination="@id/participants8"/>
-    </fragment>
     <fragment
             android:id="@+id/participants8"
             android:name="okami.yami.carl_finalproject_tourneybuilder.participants"
@@ -30,4 +20,8 @@
             android:name="okami.yami.carl_finalproject_tourneybuilder.playerBio"
               android:label="fragment_player_bio"
             tools:layout="@layout/fragment_player_bio"/>
+    <fragment android:id="@+id/start3" android:name="okami.yami.carl_finalproject_tourneybuilder.Start"
+              android:label="fragment_start" tools:layout="@layout/fragment_start">
+        <action android:id="@+id/action_start3_to_participants8" app:destination="@id/participants8"/>
+    </fragment>
 </navigation>

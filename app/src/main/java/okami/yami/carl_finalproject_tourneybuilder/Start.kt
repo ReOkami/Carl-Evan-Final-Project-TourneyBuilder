@@ -11,22 +11,10 @@ import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_start.*
 
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Activities that contain this fragment must implement the
- * [Start.OnFragmentInteractionListener] interface
- * to handle interaction events.
- * Use the [Start.newInstance] factory method to
- * create an instance of this fragment.
- *
- */
-class Start : Fragment() { // TODO: Rename and change types of parameters
 
+
+class Start : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -38,8 +26,7 @@ class Start : Fragment() { // TODO: Rename and change types of parameters
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         eightPlayer.setOnClickListener {
-            findNavController().navigate(R.id.action_start2_to_participants82)
-
+            findNavController().navigate(R.id.action_start3_to_participants8)
         }
     }
 }
