@@ -60,7 +60,6 @@ class participants : Fragment() {
         button16.setOnClickListener{
             findNavController().navigate(R.id.action_participants_to_playerBio)
         }
-
     }
 
 }
