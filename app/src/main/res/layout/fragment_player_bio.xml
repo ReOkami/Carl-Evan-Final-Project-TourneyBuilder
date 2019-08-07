@@ -8,7 +8,7 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-            android:text="John Doe"
+            android:text="@string/player_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/playerName" app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
@@ -16,7 +16,7 @@
             android:layout_marginRight="8dp" app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toTopOf="@+id/tournamentName"/>
     <TextView
-            android:text="Evo 20XX"
+            android:text="@string/tournament_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/tournamentName" app:layout_constraintStart_toStartOf="parent"
@@ -25,7 +25,7 @@
             android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/pastWins"
             android:layout_marginTop="50dp" app:layout_constraintTop_toTopOf="parent"/>
     <TextView
-            android:text="Yes all of them"
+            android:text="@string/past_wins"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/pastWins" app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
