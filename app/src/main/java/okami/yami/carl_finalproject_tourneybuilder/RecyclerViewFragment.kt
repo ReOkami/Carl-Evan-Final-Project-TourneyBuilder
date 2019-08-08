@@ -15,7 +15,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class RecyclerViewFragment: Fragment(){
+class RecyclerViewFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -44,7 +44,7 @@ class RecyclerViewFragment: Fragment(){
                 this.layoutManager = LinearLayoutManager(it)
             }
         }
-   fetchDataFromServer(adapter)
+        fetchDataFromServer(adapter)
     }
 
     private fun fetchDataFromServer(adapter: RecyclerViewAdaptor) {
@@ -77,15 +77,15 @@ class RecyclerViewFragment: Fragment(){
 
                     else -> {
                         constraintLayout?.let {
-                            Snackbar.make(it, "Something went wrong. CODE: ${response.code()}", Snackbar.LENGTH_LONG).show()
+                            Snackbar.make(it, "Something went wrong. CODE: ${response.code()}", Snackbar.LENGTH_LONG)
+                                .show()
                         }
                     }
                 }
             }
         })
     }
-    }
-
+}
 
 
 
