@@ -8,10 +8,10 @@
               android:orientation="vertical"
               android:padding="4dp">
 
-<TextView
-        android:id="@+id/textViewVHParticipantName"
-        style="@style/TextAppearance.AppCompat.Display1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:text="zgds" />
+    <TextView
+            android:id="@+id/textViewVHParticipantName"
+            style="@style/TextAppearance.AppCompat.Display1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="zgds" android:textColor="#000000"/>
 </LinearLayout>

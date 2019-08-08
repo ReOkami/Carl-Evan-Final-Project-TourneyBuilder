@@ -50,20 +50,20 @@ class RecyclerViewFragment : Fragment() {
     private fun fetchDataFromServer(adapter: RecyclerViewAdaptor) {
 
         val apiCalls = RetroFitInstance.retrofit
-        val request = apiCalls.create(Endpoints::class.java).getPartcipantList()
+        val request = apiCalls.create(Endpoints::class.java).getParticipantList()
 
-        request.enqueue(object : Callback<List<Participant>> {
+        request.enqueue(object : Callback<DataModel> {
 
-            override fun onFailure(call: Call<List<Participant>>, t: Throwable) {
-                // Logcat Warn
+            override fun onFailure(call: Call<DataModel>, t: Throwable) {
+
                 Log.w(javaClass.name, "getParticipantList() failed. Error: ${t.message}")
-                // Show pop up if Fragment is still in view
+
                 constraintLayout?.let {
                     Snackbar.make(it, "Network request failed.", Snackbar.LENGTH_LONG).show()
                 }
             }
 
-            override fun onResponse(call: Call<List<Participant>>, response: Response<List<Participant>>) {
+            override fun onResponse(call: Call<DataModel>, response: Response<DataModel>) {
 
                 when (response.code()) {
 
@@ -71,7 +71,7 @@ class RecyclerViewFragment : Fragment() {
 
                         response.body()?.let {
 
-                            adapter.submitList(it)
+                            adapter.submitList(it.data)
                         }
                     }
 
