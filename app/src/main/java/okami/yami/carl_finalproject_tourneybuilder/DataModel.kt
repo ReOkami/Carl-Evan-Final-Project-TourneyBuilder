@@ -6,7 +6,7 @@ import com.google.gson.annotations.SerializedName
 data class DataModel(
     @SerializedName("data")
     @Expose
-    val `data`: List<Data>,
+    val `data`: List<Participant>,
     @SerializedName("page")
     @Expose
     val page: Int,
@@ -21,7 +21,7 @@ data class DataModel(
     val totalPages: Int
 )
 
-data class Data(
+data class Participant(
     @SerializedName("biography")
     @Expose
     val biography: String,
@@ -33,7 +33,7 @@ data class Data(
     val name: String,
     @SerializedName("previousWins")
     @Expose
-    val previousWins: String,
+    val previousWins: Int,
     @SerializedName("tournamentName")
     @Expose
     val tournamentName: String

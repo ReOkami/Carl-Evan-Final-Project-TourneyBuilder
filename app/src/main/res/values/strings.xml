@@ -1,7 +1,11 @@
 <resources>
     <string name="app_name">Carl-FinalProject-TourneyBuilder</string>
 
+<string name="Participant_Name">Name</string>
+<string name="Tournament_Name">tournamentName</string>
 
+<string name="Biography">biography</string>
+    <string name="Previous_Wins">previousWins</string>
     <!-- TODO: Remove or change this placeholder text -->
 
 </resources>
