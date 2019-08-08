@@ -17,9 +17,9 @@
 
     <fragment
             android:id="@+id/player8Fragment"
-            android:name="okami.yami.carl_finalproject_tourneybuilder.ScreenPlayer8"
+            android:name="okami.yami.carl_finalproject_tourneybuilder.RecyclerViewFragment"
             android:label="fragment_screen_player8"
-            tools:layout="@layout/fragment_screen_player8"
+            tools:layout="@layout/fragment_recycler_view"
     >
         <action
                 android:id="@+id/action_player8Fragment_to_bioFragment"

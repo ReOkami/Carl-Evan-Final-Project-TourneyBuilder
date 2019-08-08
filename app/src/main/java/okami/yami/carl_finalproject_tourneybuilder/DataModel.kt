@@ -22,7 +22,7 @@ data class DataModel(
 )
 
 data class Participant(
-    @SerializedName("biography")
+    @SerializedName("playerBiography")
     @Expose
     val biography: String,
     @SerializedName("id")

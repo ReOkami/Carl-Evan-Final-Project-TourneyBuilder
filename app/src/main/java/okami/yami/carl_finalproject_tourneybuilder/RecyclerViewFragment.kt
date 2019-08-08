@@ -50,7 +50,7 @@ class RecyclerViewFragment : Fragment() {
     private fun fetchDataFromServer(adapter: RecyclerViewAdaptor) {
 
         val apiCalls = RetroFitInstance.retrofit
-        val request = apiCalls.create(Endpoints::class.java).getParticipantList()
+        val request = apiCalls.create(Endpoints::class.java).getPartcipantList()
 
         request.enqueue(object : Callback<List<Participant>> {
 
@@ -86,6 +86,15 @@ class RecyclerViewFragment : Fragment() {
         })
     }
 }
+
+private fun displayTestData(adapter: RecyclerViewAdaptor) {
+    val testData = listOf(
+        Participant("Test1", 1, "John1", 32, "Tourney1"),
+        Participant("Test2", 2, "John2", 32, "Tourney1"),
+        Participant("Test3", 3, "John3", 32, "Tourney1"))
+    adapter.submitList(testData)
+}
+
 
 
 
